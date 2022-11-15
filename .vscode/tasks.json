@@ -6,7 +6,7 @@
 
       "command": "/usr/bin/g++",
       "args": [
-        "-std=c++14",
+        "-std=c++17",
         "-fdiagnostics-color=always",
         "-g",
         "${workspaceFolder}/*.cpp", // this finds all source files in the working directory
@@ -14,7 +14,7 @@
         "${workspaceFolder}/application.out" // this is the executable file name, must match "program" in launch.json
       ],
       "options": {
-        "cwd": "${fileDirname}"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": [
         "$gcc"
